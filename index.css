@@ -12,6 +12,8 @@ body {
 }
 .desktop {
     @media screen and (min-width: 1025px) {
+        width: 100%;
+        height: 85px;
         .ul {
             color: #4a4a4a;
             font-size: 1rem;
@@ -21,7 +23,6 @@ body {
             margin-left: 1.75rem;
             margin-right: 1.75rem;
             display: inline;
-            width: 100%;
         }
     }
     @media screen and (max-width: 1024) {
@@ -32,6 +33,8 @@ body {
     background-color: white;
     height: 85px;
     position: fixed;
+    width: 100%;
+    display:block;
 }
 .banner {
     background-image: url("banner-landingpage.jpg");
