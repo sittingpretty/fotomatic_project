@@ -2,10 +2,36 @@ body {
     background-color: #cdd1ce;
     font-size: 16px;
 }
+.desktop-logo {
+    @media screen and (min-width: 1025px) {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: #4a4a4a;
+        font-family: Roboto-Mono-Regular;
+    }
+}
+.desktop {
+    @media screen and (min-width: 1025px) {
+        .li {
+            color: #4a4a4a;
+            font-size: 1rem;
+            font-family: Roboto-Regular;
+            line-height: 1.6;
+        }
+    }
+    @media screen and (max-width: 1024) {
+        display: none;
+    }
+}
 .content {
-    background-image: url("ic-logo.svg");
+    background-color: white;
+    height: 85px;
+    position: fixed;
+}
+.banner {
+    background-image: url("banner-landingpage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width:auto;
+    width: auto;
     height: auto;
 }
