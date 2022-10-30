@@ -9,6 +9,9 @@ body {
         color: #4a4a4a;
         font-family: Roboto-Mono-Regular;
     }
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 }
 .desktop {
     @media screen and (min-width: 1025px) {
@@ -23,6 +26,7 @@ body {
             margin-left: 1.75rem;
             margin-right: 1.75rem;
             display: inline;
+            z-index: 99;
         }
     }
     @media screen and (max-width: 1024) {
@@ -42,4 +46,15 @@ body {
     background-size: cover;
     width: auto;
     height: auto;
+}
+.main-content {
+    display:flexbox;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-image: url("banner-landingpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
