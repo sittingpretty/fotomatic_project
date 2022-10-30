@@ -33,7 +33,7 @@ body {
         display: none;
     }
 }
-.content {
+.content-header {
     background-color: white;
     height: 85px;
     position: fixed;
@@ -51,4 +51,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+}
+
+.content-footer {
+    background-color: #9B9B9B;
+    color: white;
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    height: 62px;
+    padding-left: 32px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
 }
