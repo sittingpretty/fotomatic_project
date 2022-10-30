@@ -39,6 +39,8 @@ body {
     position: fixed;
     width: 100%;
     display:block;
+    left: 0;
+    top: 0;
 }
 .main-content {
     display:flexbox;
