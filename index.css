@@ -40,16 +40,10 @@ body {
     width: 100%;
     display:block;
 }
-.banner {
-    background-image: url("banner-landingpage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto;
-}
 .main-content {
     display:flexbox;
     width: 100%;
+    height: 680px;
     margin: 0;
     padding: 0;
     justify-content: center;
