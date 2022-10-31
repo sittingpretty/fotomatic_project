@@ -146,7 +146,7 @@ body {
     margin-left: 80px;
     margin-right: 80px;
     padding-top: 15px;
-    box-style: border-box;
+    box-sizing: border-box;
     }
 #features-section {
     display: flex;
