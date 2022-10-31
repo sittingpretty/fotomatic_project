@@ -26,22 +26,22 @@ body {
             margin-left: 1.75rem;
             margin-right: 1.75rem;
             z-index: 99;
+            float: right;            
         }
         .desktop li {
-            display: inline;
             float: right;
+            list-style-type: none;
         }
         .desktop a {
-            display: block;
             color: #4a4a4a;
             font-size: 1rem;
-            font-family:'Roboto', sans-serif;;
+            font-family:'Roboto', sans-serif;
             line-height: 1.6;
             padding-right: 45px;
-            text-decoration: none;
+            text-decoration: none;            
         }
     }
-    @media screen and (max-width: 1024) {
+    @media screen and (max-width: 1024px) {
         .desktop {
         display: none;
         }
@@ -69,16 +69,18 @@ body {
 }
 .main-content {
     display:flexbox;
-    width: 100%;
+    width: auto;
     height: 680px;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-items: center;
     background-image: url("banner-landingpage.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     z-index: 1;
     margin-top: 86px;
+    padding-top: 170px;
+    padding-bottom: 170px;
 }
 
 .content-footer {
@@ -93,4 +95,161 @@ body {
     bottom: 0;
     width: 100%;
     text-align: left;
+}
+@media screen and (min-width: 1025px) {
+    .mobile {
+        display: none;
+    }
+}
+.banner {
+    margin-left: 100px;
+    text-align: center;
+}
+#sign-up-cta {
+    background-color: #9DC20A;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    height: 340px;
+    width: 568px;
+}
+.cursive {
+    margin-top: 32px;
+    color: white;
+    font-family: 'Damion', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-style: oblique;
+}
+.striking {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: lighter;
+}
+.email {
+    color: white;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.4;
+}
+.button {
+    width: 408px;
+    height: 64px;
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    margin-top: 26px;
+    margin-bottom: 56px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 15px;
+    box-style: border-box;
+    }
+#features-section {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;   
+    align-content: center;
+    margin-bottom: 46px; 
+    margin-top: 235px;
+    }
+    .feature {
+        height: 635px;
+        width: auto;
+        padding: 32px;
+        background-color: white;
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+.image-container img {
+    height: 65%;
+    width: 100%;
+    }
+.content h2 {
+        color: #4a4a4a;
+        font-size: 36px;
+        font-family:'Roboto', sans-serif;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+.content h3 {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.content {
+    margin-top: 40px;
+}
+#filters-section {
+    background-color: #4a4a4a;
+    width: 100%;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+    color: white;
+}
+#filters-section h2 {
+    opacity: 1;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#filters-section h3 {
+    font-size: 16px;
+    font-family: 'Roboto', 'sans serif';
+    font-weight: lighter;
+    margin-top: 0;
+}
+.filter-image-container {
+    display: inline;
+}
+.filter-image-container img {
+    width: 24.25%;
+    height: auto;
+    }
+.content-center {
+    margin-bottom: 64px;
+}
+.quote-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 30px;
+    font-family: 'Charm', cursive;
+    margin-bottom: 63px;
+}
+.quote-content img {
+    padding-left: 30px;
+}
+.content-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 25px;
+    height: 62px;
+    box-sizing: border-box;
+}
+.copyright {
+    color:white;
+    font-size: 12px;
+    font-family: 'Roboto', 'sans serif';
+}
+.location {
+    color:white;
+    font-size: 12px;
+    font-family: 'Roboto', 'sans serif';
+    float: right;
 }
