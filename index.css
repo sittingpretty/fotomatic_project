@@ -2,36 +2,54 @@ body {
     background-color: #cdd1ce;
     font-size: 16px;
 }
-.desktop-logo {
+
     @media screen and (min-width: 1025px) {
+        .desktop-logo {
         margin-left: 2rem;
         font-size: 1.5rem;
         color: #4a4a4a;
-        font-family: Roboto-Mono-Regular;
+        font-family: 'Roboto Mono', monospace;
     }
     @media screen and (max-width: 1024px) {
+        .desktop-logo {
         display: none;
+        }
     }
 }
-.desktop {
+
     @media screen and (min-width: 1025px) {
+        .desktop {
         width: 100%;
         height: 85px;
+        }
         .ul {
-            color: #4a4a4a;
-            font-size: 1rem;
-            font-family: Roboto-Regular;
-            line-height: 1.6;
-            float: right;
             margin-left: 1.75rem;
             margin-right: 1.75rem;
-            display: inline;
             z-index: 99;
+        }
+        .desktop li {
+            display: inline;
+            float: right;
+        }
+        .desktop a {
+            display: block;
+            color: #4a4a4a;
+            font-size: 1rem;
+            font-family:'Roboto', sans-serif;;
+            line-height: 1.6;
+            padding-right: 45px;
+            text-decoration: none;
         }
     }
     @media screen and (max-width: 1024) {
+        .desktop {
         display: none;
+        }
     }
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
 }
 .content-header {
     background-color: white;
@@ -41,6 +59,13 @@ body {
     display:block;
     left: 0;
     top: 0;
+    padding-bottom: 27px;
+    padding-top: 27px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.content-header span {
+    float: left;
 }
 .main-content {
     display:flexbox;
@@ -53,6 +78,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    margin-top: 86px;
 }
 
 .content-footer {
