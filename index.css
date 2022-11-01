@@ -3,26 +3,34 @@ body {
     font-size: 16px;
 }
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 481px) {
         .desktop-logo {
         margin-left: 2rem;
         font-size: 1.5rem;
         color: #4a4a4a;
         font-family: 'Roboto Mono', monospace;
     }
-    @media screen and (max-width: 1024px) {
+}
+    @media screen and (max-width: 480px) {
         .desktop-logo {
         display: none;
         }
+        .tablet {
+            display: none;
+        }
+        .mobile {
+            height: 48px;
+            width: 100%;
+        }
     }
-}
 
+    
     @media screen and (min-width: 1025px) {
         .desktop {
         width: 100%;
         height: 85px;
         }
-        .ul {
+        .desktop ul {
             margin-left: 1.75rem;
             margin-right: 1.75rem;
             z-index: 99;
@@ -43,9 +51,20 @@ body {
     }
     @media screen and (max-width: 1024px) {
         .desktop {
-        display: none;
+            display: none;
+        }
+        .banner  {
+            display: none;
         }
     }
+.smallbutton {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #9DC20B;
+    border-radius: 4px;
+}
 .icon {
     height: 20px;
     width: 20px;
