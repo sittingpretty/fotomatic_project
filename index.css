@@ -3,14 +3,7 @@ body {
     font-size: 16px;
 }
 
-    @media screen and (min-width: 481px) {
-        .desktop-logo {
-        margin-left: 2rem;
-        font-size: 1.5rem;
-        color: #4a4a4a;
-        font-family: 'Roboto Mono', monospace;
-    }
-}
+/* For phones */
     @media screen and (max-width: 480px) {
         .desktop-logo {
         display: none;
@@ -33,6 +26,12 @@ body {
             margin-right: 8px;
         }
         .smallbutton {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: #9DC20B;
+            border-radius: 4px;
             float: right;
         }
         .main-content {
@@ -52,7 +51,7 @@ body {
         }
     }
 
-
+/* For desktop */
     @media screen and (min-width: 1025px) {
         .desktop {
         width: 100%;
@@ -77,20 +76,72 @@ body {
             text-decoration: none;            
         }
     }
-    @media screen and (max-width: 1024px) {
+    /* For tablets*/
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
         .desktop {
             display: none;
         }
         .banner  {
             display: none;
         }
+        .mobile {
+            display: none;
+        }
+        .desktop-logo {
+            margin-top: 15px;
+        }
+        .tablet ul {
+            margin-left: 1.75rem;
+            margin-right: 1.75rem;
+            z-index: 99;
+            float: right;            
+        }
+        .tablet li {
+            float: right;
+            list-style-type: none;
+        }
+        .tablet a {
+            color: #4a4a4a;
+            font-size: 1rem;
+            font-family:'Roboto', sans-serif;
+            line-height: 1.6;
+            padding-right: 55px;
+            text-decoration: none;            
+        }
+        .content-header {
+            background-color: white;
+            height: px;
+            position: fixed;
+            width: 100%;
+            display:block;
+            left: 0;
+            top: 0;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .main-content {
+            box-sizing: flex;
+            width: 100%;
+            height: 45%;
+            margin: 0;
+            padding: 0;
+            justify-items: center;
+            background-image: url("banner-landingpage.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            z-index: 1;
+            margin-top: 49px;
+            padding-top: 33%;
+            padding-bottom: 33%;
+        }
         #features-section {
             display: flex;
             flex-wrap: no-wrap;
             justify-content: center;   
             align-content: center;
-            margin-bottom: 46px; 
-            margin-top: 235px;
+            
             }
             .feature {
                 height: 635px;
@@ -125,20 +176,31 @@ body {
         .content {
             margin-top: 40px;
     }
+    .desktop-logo {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: #4a4a4a;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .smallbutton {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: #9DC20B;
+        border-radius: 4px;
+        color: white;
+        width: 25px;
+        
+    }
 }
-.smallbutton {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
-    background-color: #9DC20B;
-    border-radius: 4px;
-}
+
 .icon {
     height: 20px;
     width: 20px;
     margin-left: 15px;
 }
+/* More desktop */
 @media screen and (min-width: 1025px) {
 .content-header {
     background-color: white;
