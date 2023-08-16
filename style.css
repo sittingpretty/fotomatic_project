@@ -2,21 +2,40 @@ body {
     background-color:lightcyan;
 }
 header {
-    background-image: url("pattern.jpeg");
+    background-image: url("./pattern.jpeg");
     margin-top: 0;
     width:auto;
     height: 25%;
 }
+.topnav {
+        background-color: #464343;
+        margin: 5px 0px;
+        width:100%;
+        overflow: hidden;
+      }
+.topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+.topnav a:hover {
+       background-color: #ddd;
+        color: black;
+      }
+.topnav a.active {
+        background-color: black;
+        color: white;
+      }
 .title {
+    background-image: url("pattern.jpeg");
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75px;
     font-weight: bold;
     color:khaki;
     text-align:center;
-}
-.menu {
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,12 +48,24 @@ img {
 }
 .brushes {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 15px;
+    padding-left:10px;
+    box-sizing:border-box;
+    font-family: Helvetica;
 }
 .frames {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left:10px;
+    padding-bottom: 15px;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif
 }
 .paint {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left:10px;
+    padding-bottom: 15px;
+    box-sizing:border-box;
+    font-family: Helvetica;
 }
 #brushes {
     background-color: mediumspringgreen;
@@ -47,4 +78,8 @@ img {
 #paint {
     background-color: skyblue;
     padding: 7px 15px;
+}
+span {
+    font-weight: bold;
+    color:blue;
 }
